@@ -1,7 +1,7 @@
 //Criando função para passar o mouse em para entrar em cada carta
 function handleMouseEnter() {
     this.classList.add('s-card--hovered');
-    document.body.id = `$(this.id)hovered`;
+    document.body.id = `${this.id}-hovered`;
 }
 
 //criando função para quando o mouse sai da carta

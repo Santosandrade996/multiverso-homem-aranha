@@ -23,12 +23,20 @@ body::before {
     width: 100%;
     text-align: center;
     position: relative;
+
 }
 
+.s-menu__item {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0 1.25rem;
+}
+
+
 .s-menu__icon {
-    width: 2.5rem;
-    margin: 0 1.25rem;
-    vertical-align: middle;
+  width: 2.5rem;
+  margin: 0 1.25rem;
+  vertical-align: middle;
 }
 
 .s-container {
@@ -40,15 +48,16 @@ body::before {
 }
 
 .s-card {
-    border: 0.5rem solid white;
-    width: 100%;
-    height: 70vh;
-    position: absolute;
-    transition: filter .5s ease-in-out;
+   width: 100%;
+   height: 70vh;
+   position: absolute;
+   transition: filter .5s ease-in-out;
+   border: 0.5rem solid white;
+   border-radius: 10px;
 }
 
 .s-card:nth-child(1) {
-    transform: rotateY('0deg') translateZ(50vw);
+    transform: rotateY(0deg) translateZ(50vw);
 }
 
 .s-card:nth-child(2) {
@@ -174,7 +183,8 @@ body[id^="spider-man-"] .s-card:not(.s-card--hovered) {
 .s-cards-carousel {
   display: flex;
   justify-content: center;
-  width: calc(100vw / 3 - 10%);
+  width: 30vw;
+  height: 500px;
   transform-style: preserve-3d;
   transition: transform 0.4s ease-in;
 }
